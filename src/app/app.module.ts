@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuarioService } from './usuario/usuario.service';
 import { FichaModule } from './ficha/ficha.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FichaModule } from './ficha/ficha.module';
     BrowserModule,
     HttpClientModule,
     CoreModule,
+    AuthModule,
     UsuarioModule,
     FichaModule,
     AppRoutingModule,
