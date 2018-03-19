@@ -9,6 +9,8 @@ import { SharedModule } from './shared/shared.module';
 import { UsuarioModule } from './usuario/usuario.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { UsuarioService } from './usuario/usuario.service';
+import { FichaModule } from './ficha/ficha.module';
 
 
 @NgModule({
@@ -20,9 +22,10 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     CoreModule,
     UsuarioModule,
+    FichaModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -19,6 +19,5 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     UsuarioRoutingModule
   ],
-  providers: [UsuarioService]
 })
 export class UsuarioModule { }

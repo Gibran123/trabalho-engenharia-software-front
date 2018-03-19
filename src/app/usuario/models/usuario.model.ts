@@ -3,4 +3,8 @@ export class Usuario {
   name: string;
   email: string;
   senha: string;
+
+  constructor(name = '') {
+    this.name = name;
+  }
 }

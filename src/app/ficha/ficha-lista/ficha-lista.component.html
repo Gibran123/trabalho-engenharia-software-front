@@ -1,10 +1,10 @@
 <div class="row">
   <div class="col-md-12">
-    <button class="btn btn-primary mgb-50" [routerLink]="['/usuarios', 'novo']">
+    <button class="btn btn-primary mgb-50" [routerLink]="['/fichas', 'nova']">
       <span class="oi oi-plus" title="plus" aria-hidden="true"></span>
-      Adicionar usuário
+      Adicionar ficha
     </button>
-    <h3>Usuários</h3>
+    <h3>Fichas</h3>
     <table class="table table-hover">
       <thead>
         <tr>
@@ -12,9 +12,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let usuario of usuarios">
-          <td>{{ usuario.name }}</td>
-          <td>{{ usuario.email }}</td>
+        <tr *ngFor="let ficha of fichas">
+          <td>{{ ficha.description }}</td>
+          <td>{{ ficha.user.name }}</td>
           <td>
             <app-buttons-table></app-buttons-table>
           </td>
