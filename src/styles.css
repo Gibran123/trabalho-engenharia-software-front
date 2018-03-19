@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+hr {
+  margin-bottom: 20px;
+}
+
+table {
+  margin-top: 50px;
+}
+
+
+.mgb-50 {
+  margin-bottom: 50px;
+}
