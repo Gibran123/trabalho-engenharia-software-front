@@ -14,6 +14,7 @@ import { FichaModule } from './ficha/ficha.module';
 import { AuthModule } from './auth/auth.module';
 import { DicaModule } from './dica/dica.module';
 import { AlunoModule } from './aluno/aluno.module';
+import { AvisoModule } from './aviso/aviso.module';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { AlunoModule } from './aluno/aluno.module';
     FichaModule,
     DicaModule,
     AlunoModule,
+    AvisoModule,
     AppRoutingModule,
   ],
   providers: [UsuarioService],
