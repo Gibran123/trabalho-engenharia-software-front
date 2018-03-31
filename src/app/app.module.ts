@@ -12,11 +12,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { UsuarioService } from './usuario/usuario.service';
 import { FichaModule } from './ficha/ficha.module';
 import { AuthModule } from './auth/auth.module';
+import { DicaModule } from './dica/dica.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +26,7 @@ import { AuthModule } from './auth/auth.module';
     AuthModule,
     UsuarioModule,
     FichaModule,
+    DicaModule,
     AppRoutingModule,
   ],
   providers: [UsuarioService],
