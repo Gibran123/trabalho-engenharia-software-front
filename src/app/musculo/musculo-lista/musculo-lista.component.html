@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-primary mgb-50" [routerLink]="['/musculos', 'novo']">
+      <span class="oi oi-plus" title="plus" aria-hidden="true"></span>
+      Adicionar músculo
+    </button>
+    <h3>Músculos</h3>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th *ngFor="let column of columns">{{column}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let musculo of musculos">
+          <td>{{ musculo.name }}</td>
+          <td>
+            <app-buttons-table></app-buttons-table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

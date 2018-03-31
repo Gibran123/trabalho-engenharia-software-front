@@ -19,6 +19,5 @@ import { MaquinaRoutingModule } from "./maquina-routing.module";
     SharedModule,
     MaquinaRoutingModule,
   ],
-  providers: [MaquinaService]
 })
 export class MaquinaModule { }

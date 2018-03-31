@@ -16,6 +16,9 @@ import { DicaModule } from './dica/dica.module';
 import { AlunoModule } from './aluno/aluno.module';
 import { AvisoModule } from './aviso/aviso.module';
 import { MaquinaModule } from './maquina/maquina.module';
+import { MusculoService } from './musculo/musculo.service';
+import { MaquinaService } from './maquina/maquina.service';
+import { MusculoModule } from './musculo/musculo.module';
 
 
 @NgModule({
@@ -33,9 +36,10 @@ import { MaquinaModule } from './maquina/maquina.module';
     AlunoModule,
     AvisoModule,
     MaquinaModule,
+    MusculoModule,
     AppRoutingModule,
   ],
-  providers: [UsuarioService],
+  providers: [UsuarioService, MusculoService, MaquinaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
