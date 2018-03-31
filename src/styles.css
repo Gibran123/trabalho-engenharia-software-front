@@ -8,6 +8,13 @@ table {
   margin-top: 50px;
 }
 
+table thead tr th:last-child {
+  text-align: center;
+}
+
+table tbody tr td:last-child {
+  text-align: center;
+}
 
 .mgb-50 {
   margin-bottom: 50px;
