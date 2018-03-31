@@ -19,6 +19,8 @@ import { MaquinaModule } from './maquina/maquina.module';
 import { MusculoService } from './musculo/musculo.service';
 import { MaquinaService } from './maquina/maquina.service';
 import { MusculoModule } from './musculo/musculo.module';
+import { ExercicioModule } from './exercicio/exercicio.module';
+import { ExercicioService } from './exercicio/exercicio.service';
 
 
 @NgModule({
@@ -37,9 +39,10 @@ import { MusculoModule } from './musculo/musculo.module';
     AvisoModule,
     MaquinaModule,
     MusculoModule,
+    ExercicioModule,
     AppRoutingModule,
   ],
-  providers: [UsuarioService, MusculoService, MaquinaService],
+  providers: [UsuarioService, MusculoService, MaquinaService, ExercicioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

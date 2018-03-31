@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h3>Novo Músculo</h3>
+    <hr>
+    <form novalidate>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="machine_id">Máquina</label>
+          <select name="machine_id" id="machine_id" class="form-control">
+            <option value="null">Escolha uma máquina</option>
+            <option value="" *ngFor="let maquina of maquinas">
+              {{ maquina.name }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="muscle_id">Músculos</label>
+          <select name="muscle_id" id="muscle_id" class="form-control">
+            <option value="null">Escolha um músculo</option>
+            <option value="" *ngFor="let musculo of musculos">
+              {{ musculo.name }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="description">Descrição</label>
+          <textarea id="description" class="form-control"></textarea>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary">Salvar</button>
+    </form>
+  </div>
+  <div class="col-md-2"></div>
+</div>
