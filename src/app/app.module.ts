@@ -21,6 +21,7 @@ import { MaquinaService } from './maquina/maquina.service';
 import { MusculoModule } from './musculo/musculo.module';
 import { ExercicioModule } from './exercicio/exercicio.module';
 import { ExercicioService } from './exercicio/exercicio.service';
+import { ProfessorModule } from './professor/professor.module';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { ExercicioService } from './exercicio/exercicio.service';
     MaquinaModule,
     MusculoModule,
     ExercicioModule,
+    ProfessorModule,
     AppRoutingModule,
   ],
   providers: [UsuarioService, MusculoService, MaquinaService, ExercicioService],
